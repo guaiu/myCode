@@ -11,7 +11,7 @@ def RANDOMIZED_SPLIT(myList,low,high):
         i = low
         x = myList[low]
         for j in range(low+1, high+1):
-            if myList[j] <= x:
+            if myList[j] < x:
                 i += 1
                 if i != j:
                     myList[i],myList[j] = myList[j],myList[i]
