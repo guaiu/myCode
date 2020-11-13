@@ -3,6 +3,7 @@
 
 # demo2 QML文件的载入
 
+import sys
 from PySide2.QtWidgets import QApplication
 from PySide2.QtQuick import QQuickView
 from PySide2.QtCore import QUrl
@@ -16,4 +17,4 @@ if __name__ == '__main__':
 
     view.setSource(url)
     view.show()
-    app.exec_()
+    sys.exit(app.exec_())

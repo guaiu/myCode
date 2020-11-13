@@ -30,4 +30,4 @@ if __name__ == '__main__':
     #使用窗口控件内置的信号连接槽函数
     button.show()
 
-    app.exec_()
+    sys.exit(app.exec_())

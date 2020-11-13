@@ -16,4 +16,4 @@ if __name__ == '__main__':
     button = QPushButton("Don't click me!")
     button.clicked.connect(meow)
     button.show()
-    app.exec_()
+    sys.exit(app.exec_())

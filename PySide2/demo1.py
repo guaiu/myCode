@@ -10,7 +10,7 @@ def simpleLabel(myStr):
     app = QApplication(sys.argv)
     label = QLabel(myStr)
     label.show()
-    app.exec_()
+    sys.exit(app.exec_())
     
 if __name__ == '__main__':
     myStr = input('please input your str: ')

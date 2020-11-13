@@ -3,6 +3,8 @@
 
 # demo4 自定义信号类和槽类
 
+#import sys
+
 from PySide2.QtWidgets import QApplication
 from PySide2.QtCore import Qt, QObject, Signal, Slot
 
@@ -51,6 +53,9 @@ class mySlotClass(QObject):
         
     
 if __name__ == '__main__':
+    
+    #app = QApplication(sys.argv)
+    
     #实例化信号对象
     send = mySignalClass()
     #实例化槽对象
@@ -68,3 +73,5 @@ if __name__ == '__main__':
     send.mySignal_1.disconnect(slot.dealMySignal_1)
     send.mySignal_2.disconnect (slot.dealMySignal_2
     '''
+    
+    #sys.exit(app.exec_())

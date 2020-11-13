@@ -4,6 +4,8 @@
 # topic_slot   PySide2信号与槽
 # topic_slot_2 自定义信号 与 槽 的使用(自定义一个信号类)
 
+#import sys
+
 from PySide2.QtWidgets import QApplication
 from PySide2.QtCore import Qt, QObject, Signal, Slot
 
@@ -43,7 +45,9 @@ class CustomClass(QObject):
         print("the second arg is:", text)    
         
 
-if __name__ == '__main__':        
+if __name__ == '__main__':
+    #app = QApplication(sys.argv)
+        
     # 实例化这个类
     cs = CustomClass()
 
@@ -53,3 +57,5 @@ if __name__ == '__main__':
 
     # 发射信号
     cs.send_signal()
+    
+    #sys.exit(app.exec_())
