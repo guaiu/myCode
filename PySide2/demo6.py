@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# demo6 基于信号槽机制的自定义线程类
+# demo6 时间打印器(基于信号槽机制的自定义线程类)
 
 import time
 import sys

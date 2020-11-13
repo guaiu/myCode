@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# demo5 简单对话框的实现
+# demo5 简单对话框的实现(信号与槽)
 
 import sys
 import os
